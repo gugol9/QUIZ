@@ -1,8 +1,8 @@
 package com.company;
 
 public class Main {
-//dasdasdas
     public static void main(String[] args) {
-	// write your code here
+
+        System.out.println("Quiz wiedzy o Polsce");
     }
 }
