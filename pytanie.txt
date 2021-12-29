@@ -3,7 +3,7 @@ W ktorym roku mial miejsce chrzest Polski
 960
 966
 1024
-a
+c
 Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 Wait(2000)
 Stop(2000)
