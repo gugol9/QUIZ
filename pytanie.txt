@@ -1,9 +1,9 @@
-Typ zmiennych o nazwie float przechowuje:
-liczby calkowite
-napisy
-liczby zmiennoprzecinkowe
-pojedyncze znaki
-c
+W ktorym roku mial miejsce chrzest Polski
+996
+960
+966
+1024
+a
 Wstrzymanie wykonania programu na czas 2 sekund uzyskasz instrukcja:
 Wait(2000)
 Stop(2000)
