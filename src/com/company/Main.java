@@ -5,8 +5,11 @@ import java.io.FileNotFoundException;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
-        System.out.println("Quiz wiedzy o Polsce");
+
         Question a = new Question();
         a.load();
+        a.ask();
+        a.check();
+        System.out.println("Koniec quizu zdobyte punkty: " + a.score);
     }
 }
