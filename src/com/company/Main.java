@@ -13,15 +13,20 @@ public class Main {
         //Question q = new Question();
         int sum = 0;
 
-        for(int i = 0; i < questions.length ;i++)
+
+
+
+        for(int i = 0; i < questions.length; i++)
         {
-            questions[i].number_question = i + 1;
-            questions[i].load();
-            questions[i].ask();
-            questions[i].check();
-            sum+= questions[i].score;
-
-
+            questions[i] = new Question();      //przypisany obiekt do tablicy gdy tego nie ma nullPointerExeption to probuje wykonac operacje na null tablica jest doyslnie null wypelniona
+           if(questions[i] != null)
+            {
+                questions[i].number_question = i + 1;
+                questions[i].load();
+                questions[i].ask();
+                questions[i].check();
+                sum += questions[i].score;
+            }
         }
         System.out.println("Koniec quizu zdobyte punkty: " + sum);
     }
