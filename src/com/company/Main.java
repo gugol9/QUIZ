@@ -25,11 +25,11 @@ static int N = 5;
             check[i] = new Check();
           if (questions[i] != null && loader[i] != null && ask[i] != null && check[i] != null)       //sprawdzenie czy tablica nie jet wypełniona wartosciami null
           {
-                questions[i].number_question = i + 1;
-                loader[i].load();
+                Question.number_question = i + 1;       //bez tworzenia obiektu static
+                Loader.load();
                 Ask.ask();
-                check[i].check();
-                sum += questions[i].score;
+                Check.check();
+                sum += Question.score;
            }
 
           }

@@ -8,7 +8,7 @@ public class Loader extends Question  {
 
 
 int bbb;
-  public void load() throws FileNotFoundException                     // funkcja void, która wczytuje plik pytanie.txt oraz wyswietla dane w nim a file FileNotFoundException to wyjatek
+  public static void load() throws FileNotFoundException                     // funkcja void, która wczytuje plik pytanie.txt oraz wyswietla dane w nim a file FileNotFoundException to wyjatek
     {
         File file = new File("pytanie.txt");           // klasa file jest to zaczep do pliku
         Scanner scanner = new Scanner(file);                    //tworze nowy obiekt scanner klasy Scanner
