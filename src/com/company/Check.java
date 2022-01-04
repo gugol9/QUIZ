@@ -4,11 +4,10 @@ import java.util.Objects;
 
 public class Check extends Question {
 
-    public Check() {
 
-    }
 
-    void check() // checks a answer
+
+  public  void check() // checks a answer
     {
         if (Objects.equals(user_answer, true_answer))   // porownywanie stringow jednen rowny drugiemu
         {
