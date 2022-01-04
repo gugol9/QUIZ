@@ -8,7 +8,7 @@ public class Loader extends Question  {
 
 
 int bbb;
-  public static void load() throws FileNotFoundException                     // funkcja void, która wczytuje plik pytanie.txt oraz wyswietla dane w nim a file FileNotFoundException to wyjatek
+  public static void load() throws FileNotFoundException         // funkcja void, która wczytuje plik pytanie.txt oraz wyswietla dane w nim a file FileNotFoundException to wyjatek
     {
         File file = new File("pytanie.txt");           // klasa file jest to zaczep do pliku
         Scanner scanner = new Scanner(file);                    //tworze nowy obiekt scanner klasy Scanner
@@ -17,8 +17,8 @@ int bbb;
         int line_number = (number_question - 1) * 6 + 1;        //wzor według którego co 7 linia to pytanie
         int current_line = 1;                                   // aktualny nr lini
 
-        while (scanner.hasNext()) {       //petla while wykorzustuje obiekt scanner z klasy scanner i wczytuje dopuki manastepna linie do wczytanai przy czym za linie uznaje koniec lini ze znakiem enter
-            line = scanner.nextLine();      //linia to nastepna linia w metodzie scanner ???
+        while (scanner.hasNext()) {                             //petla while wykorzustuje obiekt scanner z klasy scanner i wczytuje dopuki manastepna linie do wczytanai przy czym za linie uznaje koniec lini ze znakiem enter
+            line = scanner.nextLine();                          //linia to nastepna linia w metodzie scanner ???
             if (current_line == line_number) contents = line;
             if (current_line == line_number + 1) a = line ;
             if (current_line == line_number + 2) b = line;

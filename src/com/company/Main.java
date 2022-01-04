@@ -3,7 +3,7 @@ package com.company;
 import java.io.FileNotFoundException;
 
 public class Main {
-static int N = 5;
+static final int N = 10;     //zadeklarowwany statyczny ostateczy int N ktory jest wielkoscia tablicy(tyle pytan wyswietlonych bedzie )
 
     public static void main(String[] args) throws FileNotFoundException {
 
@@ -12,11 +12,8 @@ static int N = 5;
         Ask[] ask = new Ask[N];
         Check[] check = new Check[N];
 
-
-
-    int sum = 0;
         System.out.println("GRA WIEDZA O POLSCE");
-
+        int sum = 0;
         for (int i = 0; i < questions.length; i++)
         {
             questions[i] = new Question(); //przypisany obiekt do tablicy gdy tego nie ma nullPointerExeption to probuje wykonac operacje na null tablica jest doyslnie null wypelniona
@@ -31,17 +28,8 @@ static int N = 5;
                 Check.check();
                 sum += Question.score;
            }
-
           }
         System.out.println("Koniec quizu zdobyte punkty: " + sum);
-        System.out.println("Odpowiedziałeś poprawnie na: " + sum + " / 6 pytań");
-
-
-
-
-
-
+        System.out.println("Odpowiedziałeś poprawnie na: " + sum + " / 10 pytań");
     }
-
-
 }

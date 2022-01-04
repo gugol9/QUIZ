@@ -11,9 +11,7 @@ public class Question  {
     public static int score;              //punkty zdobyte na koniec gry zwiekaszne o 1 gdy gracz odpowie poprawnie
 
 
-    //public Loader loader = new Loader();
-    //public Ask asker = new Ask();
-    //public Check check = new Check();
+
 
 
 }
