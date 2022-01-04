@@ -7,12 +7,10 @@ static int N = 5;
 
     public static void main(String[] args) throws FileNotFoundException {
 
-
         Question[] questions = new Question[N];
         Loader[] loader = new Loader[N];
         Ask[] ask = new Ask[N];
         Check[] check = new Check[N];
-
 
 
 
@@ -25,17 +23,20 @@ static int N = 5;
             loader[i] = new Loader();
             ask[i] = new Ask();
             check[i] = new Check();
-         //  if (questions[i] != null && loader[i] != null && ask[i] != null && check[i] != null)       //sprawdzenie czy tablica nie jet wypełniona wartosciami null
-          // {
-
-              loader[i].load();
-               ask[i].ask();
+          if (questions[i] != null && loader[i] != null && ask[i] != null && check[i] != null)       //sprawdzenie czy tablica nie jet wypełniona wartosciami null
+          {
+                questions[i].number_question = i + 1;
+                loader[i].load();
+                Ask.ask();
                 check[i].check();
                 sum += questions[i].score;
-          //  }
-        }
+           }
+
+          }
         System.out.println("Koniec quizu zdobyte punkty: " + sum);
         System.out.println("Odpowiedziałeś poprawnie na: " + sum + " / 6 pytań");
+
+
 
 
 

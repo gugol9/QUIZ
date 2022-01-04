@@ -7,7 +7,7 @@ public class Check extends Question {
 
 
 
-  public  void check() // checks a answer
+  public static void check() // checks a answer
     {
         if (Objects.equals(user_answer, true_answer))   // porownywanie stringow jednen rowny drugiemu
         {

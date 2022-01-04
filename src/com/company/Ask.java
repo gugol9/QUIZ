@@ -5,7 +5,9 @@ import java.util.Scanner;
 
 public class Ask extends Question {
 
-    public void ask() // asks a question
+    Loader loader = new Loader();
+
+    public static void ask() // asks a question
     {
 
         Scanner scan = new Scanner(System.in);          //mozliwosc wprwoadzenia danych dzieki klasie Scanner
@@ -19,6 +21,7 @@ public class Ask extends Question {
         System.out.print("Odpowiedż: ");
         user_answer = scan.nextLine();                  //uzytkownik wprowadza odpwiedz
     }
+
 
 
 }
