@@ -12,9 +12,12 @@ static final int N = 10;     //zadeklarowwany statyczny ostateczy int N ktory je
         Ask[] ask = new Ask[N];
         Check[] check = new Check[N];
 
+        MarkSystem markSystem = new MarkSystem();
+
         System.out.println("GRA WIEDZA O POLSCE");
         System.out.println("Wpisz jako dopowiedż: a, b, c lub d");
         int sum = 0;
+
         for (int i = 0; i < questions.length; i++)
         {
             questions[i] = new Question(); //przypisany obiekt do tablicy gdy tego nie ma nullPointerExeption to probuje wykonac operacje na null tablica jest doyslnie null wypelniona
@@ -32,6 +35,6 @@ static final int N = 10;     //zadeklarowwany statyczny ostateczy int N ktory je
           }
         System.out.println("Koniec quizu zdobyte punkty: " + sum);
         System.out.println("Odpowiedziałeś poprawnie na: " + sum + " / 10 pytań");
-        System.out.println("Twoja ocena: ");
+        System.out.println("Twoja ocena: " + markSystem.addScore(sum));
     }
 }
