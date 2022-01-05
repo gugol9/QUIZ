@@ -12,7 +12,7 @@ public class MarkSystem extends Question{
 
         if(sum == 4) return 2;
 
-        if(sum < 3) return 1;
+        if(sum <= 3) return 1;
 
 
         return sum;
