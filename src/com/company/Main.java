@@ -30,15 +30,15 @@ static final int N = 10;     //zadeklarowwany statyczny ostateczy int N ktory je
                 Loader.load();
                 Ask.ask();
                 Check.check();
-                sum += Question.score;
+                sum += Question.score ;
            }
           }
-        System.out.println("Odpowiedziałeś poprawnie na: " + sum + " / 10 pytań");
+        //System.out.println("Odpowiedziałeś poprawnie na: " + sum + " / 10 pytań");        NAPRAWIC
         System.out.println("Twoja ocena: " + markSystem.addScore(sum));
-        System.out.println("ocena 5 - 10/9 pkt");
-        System.out.println("ocena 4 - 8/7 pkt");
-        System.out.println("ocena 3 - 6/5 pkt");
-        System.out.println("ocena 2 - 4 pkt");
-        System.out.println("ocena 1 - < 3 pkt");
+     //   System.out.println("ocena 5 - 10/9 pkt");
+      //  System.out.println("ocena 4 - 8/7 pkt");
+    //    System.out.println("ocena 3 - 6/5 pkt");
+     //   System.out.println("ocena 2 - 4 pkt");
+     //   System.out.println("ocena 1 - < 3 pkt");
     }
 }

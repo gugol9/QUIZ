@@ -9,7 +9,7 @@ public class Question  {
     public static String user_answer;     //odpowiedz od uzytkownika
     public  static int number_question;    //numer pytania
     public static int score;              //punkty zdobyte na koniec gry zwiekaszne o 1 gdy gracz odpowie poprawnie
-   // public static int sum ;
+
 
 
 //Pola są statyczne gdyż są one współdzielone przez wszystkie obiekty tej klasy w przeciwieństwie do pól niestatycznych (instancji), których własne egzemplarze ma każdy obiekt klasy

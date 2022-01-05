@@ -11,7 +11,7 @@ public class Check extends Question {
     {
         if(Objects.equals(user_answer, true_answer))   // porownywanie stringow jednen rowny drugiemu
         {
-            score = 1;
+            score = 2;
             System.out.println("To poprawna odpowiedż !!!");
         } else {
             score = 0;
