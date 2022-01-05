@@ -9,7 +9,6 @@ public class Ask extends Question {
 
     public static void ask() // asks a question
     {
-
         Scanner scan = new Scanner(System.in);          //mozliwosc wprwoadzenia danych dzieki klasie Scanner
         System.out.println();                           //odstęp od góry od wyświetlanej tresci
         System.out.println("Pytanie "+ contents);
@@ -21,7 +20,4 @@ public class Ask extends Question {
         System.out.print("Odpowiedż: ");
         user_answer = scan.nextLine();                  //uzytkownik wprowadza odpwiedz
     }
-
-
-
 }

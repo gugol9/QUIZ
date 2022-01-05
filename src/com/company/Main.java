@@ -13,6 +13,7 @@ static final int N = 10;     //zadeklarowwany statyczny ostateczy int N ktory je
         Check[] check = new Check[N];
 
         System.out.println("GRA WIEDZA O POLSCE");
+        System.out.println("Wpisz jako dopowiedż: a, b, c lub d");
         int sum = 0;
         for (int i = 0; i < questions.length; i++)
         {
@@ -31,5 +32,6 @@ static final int N = 10;     //zadeklarowwany statyczny ostateczy int N ktory je
           }
         System.out.println("Koniec quizu zdobyte punkty: " + sum);
         System.out.println("Odpowiedziałeś poprawnie na: " + sum + " / 10 pytań");
+        System.out.println("Twoja ocena: ");
     }
 }
