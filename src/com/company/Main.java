@@ -7,6 +7,7 @@ static final int N = 10;     //zadeklarowwany statyczny ostateczy int N ktory je
 
     public static void main(String[] args) throws FileNotFoundException {
 
+
         Question[] questions = new Question[N];
         Loader[] loader = new Loader[N];
         Ask[] ask = new Ask[N];
@@ -14,13 +15,14 @@ static final int N = 10;     //zadeklarowwany statyczny ostateczy int N ktory je
 
         MarkSystem markSystem = new MarkSystem();
 
-        System.out.println("GRA WIEDZA O POLSCE");
+        System.out.println("QUIZ WIEDZY O POLSCE");
         System.out.println("Wpisz jako dopowiedż: a, b, c lub d");
         int sum = 0;
+        int ile = 0;
 
         for (int i = 0; i < questions.length; i++)
         {
-            questions[i] = new Question(); //przypisany obiekt do tablicy gdy tego nie ma nullPointerExeption to probuje wykonac operacje na null tablica jest doyslnie null wypelniona
+            questions[i] = new Question(); //przypisany obiekt do tablicy
             loader[i] = new Loader();
             ask[i] = new Ask();
             check[i] = new Check();
@@ -30,15 +32,17 @@ static final int N = 10;     //zadeklarowwany statyczny ostateczy int N ktory je
                 Loader.load();
                 Ask.ask();
                 Check.check();
-                sum += Question.score ;
-           }
+                sum += Question.score ;         //dodaje 2pkt za kazda dobra odpowiedz do zmiennej suma
+                ile = sum/2;                //liczy na ile pytań dobrze odpowiedzial gracz
           }
-        //System.out.println("Odpowiedziałeś poprawnie na: " + sum + " / 10 pytań");        NAPRAWIC
+          }
+        System.out.println("Odpowiedziałeś poprawnie na: " + ile + " / " + N + " pytań");
         System.out.println("Twoja ocena: " + markSystem.addScore(sum));
-     //   System.out.println("ocena 5 - 10/9 pkt");
-      //  System.out.println("ocena 4 - 8/7 pkt");
-    //    System.out.println("ocena 3 - 6/5 pkt");
-     //   System.out.println("ocena 2 - 4 pkt");
-     //   System.out.println("ocena 1 - < 3 pkt");
+        System.out.println("Gratuluje zdobyłeś: "+ sum + " pkt" );
+        System.out.println("ocena 5 - 20/18 pkt");
+        System.out.println("ocena 4 - 16/14 pkt");
+        System.out.println("ocena 3 - 12/10 pkt");
+        System.out.println("ocena 2 - 8/6 pkt");
+        System.out.println("ocena 1 - < 4 pkt");
     }
 }
